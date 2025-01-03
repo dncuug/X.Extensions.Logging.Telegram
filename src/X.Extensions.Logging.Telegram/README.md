@@ -13,7 +13,7 @@ var options = new TelegramLoggerOptions(LogLevel.Information)
 {
     AccessToken = "1234567890:AAAaaAAaa_AaAAaa-AAaAAAaAAaAaAaAAAA",
     ChatId = "-0000000000000",
-    Source = "Human Readable Project Name"
+    FormatterConfiguration.ReadableApplicationName = "Human Readable Project Name"
 };
 
 ...
@@ -42,7 +42,9 @@ builder
       },
       "AccessToken": "1234567890:AAAaaAAaa_AaAAaa-AAaAAAaAAaAaAaAAAA",
       "ChatId": "1234567890",
-      "Source": "Human Readable Project Name"
+      "FormatterConfiguration": {
+          "ReadableApplicationName": "Human Readable Project Name"
+      }
     }
   },
   "AllowedHosts": "*"
